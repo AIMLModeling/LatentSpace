@@ -117,7 +117,7 @@ def onclick(event):
     ax[1].imshow(decoded_img, cmap='gray')
     plt.draw()
 
-cid = fig.canvas.mpl_connect('motion_notify_event', onclick)
+cid  = fig.canvas.mpl_connect('button_press_event', onclick)
 
 plt.show()
 #------------------------------------------------------------------------------#
